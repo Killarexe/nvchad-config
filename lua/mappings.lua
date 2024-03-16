@@ -11,3 +11,8 @@ map("n", "<leader>fm", function()
 end, { desc = "File Format with conform" })
 
 map("i", "jk", "<ESC>", { desc = "Escape insert mode" })
+
+map("n", "<C-h>", "<cmd> TmuxNavigateLeft", {desc = "Go to tmux Window Left"})
+map("n", "<C-l>", "<cmd> TmuxNavigateRight", {desc = "Go to tmux Window Right"})
+map("n", "<C-j>", "<cmd> TmuxNavigateDown", {desc = "Go to tmux Window Down"})
+map("n", "<C-k>", "<cmd> TmuxNavigateUp", {desc = "Go to tmux Window Up"})
