@@ -4,6 +4,7 @@ local lspconfig = require "lspconfig"
 
 local servers = {
   "asm_lsp",
+  "arduino_language_server",
   "clangd",
   "cmake",
   "cssls",
@@ -13,7 +14,8 @@ local servers = {
   "marksman",
   "rust_analyzer",
   "taplo",
-  "zls"
+  "zls",
+  "pylsp"
 }
 local nvlsp = require "nvchad.configs.lspconfig"
 

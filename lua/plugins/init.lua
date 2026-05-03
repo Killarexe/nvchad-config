@@ -1,9 +1,7 @@
 local plugins = {
   {
     "stevearc/conform.nvim",
-    config = function()
-      require "configs.conform"
-    end,
+    opts = require "configs.conform",
   },
 
   {
@@ -17,9 +15,9 @@ local plugins = {
     lazy = false,
   },
   {
-    "jiriks74/presence.nvim",
+    "andweeb/presence.nvim",
     lazy = false,
-    config = function ()
+    opts = function ()
       require "configs.presence"
     end
   },
